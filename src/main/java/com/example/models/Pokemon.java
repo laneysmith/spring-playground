@@ -1,6 +1,6 @@
 package com.example.models;
 
-public class PokemonInfo {
+public class Pokemon {
     private String type;
     private String level;
 

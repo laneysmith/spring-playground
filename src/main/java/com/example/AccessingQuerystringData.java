@@ -1,6 +1,6 @@
 package com.example;
 
-import com.example.models.PokemonInfo;
+import com.example.models.Pokemon;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +21,7 @@ public class AccessingQuerystringData {
     }
 
     @GetMapping("/pokemon")
-    public String getPokemon(PokemonInfo pokemonInfo) {
-        return String.format("Pokemon type is %s and level is %s", pokemonInfo.getType(), pokemonInfo.getLevel());
+    public String getPokemon(Pokemon pokemon) {
+        return String.format("Pokemon type is %s and level is %s", pokemon.getType(), pokemon.getLevel());
     }
 }
