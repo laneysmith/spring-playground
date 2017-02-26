@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccessingJsonRequests {
 
     @PostMapping("/trainer")
-    public String pokemonTrainerEndpoint(@RequestBody Trainer trainer) {
+    public String postPokemonTrainer(@RequestBody Trainer trainer) {
         return String.format("%s is a trainer on team %s with %s pokemon", trainer.getName(), trainer.getTeam(), trainer.getPokemon().size());
     }
 }
