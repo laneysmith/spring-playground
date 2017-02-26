@@ -1,0 +1,14 @@
+{
+  "name": "Laney",
+  "team": "blue",
+  "pokemon": [
+    {
+      "type": "water",
+      "level": "45"
+    },
+    {
+      "type": "fire",
+      "level": "15"
+    }
+  ]
+}
